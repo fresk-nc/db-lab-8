@@ -1,8 +1,6 @@
 package ru.fresk.db.lab.util;
 
 import org.hibernate.HibernateException;
-import ru.fresk.db.lab.models.GraphEntity;
-import ru.fresk.db.lab.models.VertexEntity;
 import ru.fresk.db.lab.models.EdgeEntity;
 
 import org.hibernate.SessionFactory;
@@ -19,8 +17,6 @@ public class HibernateSessionFactoryUtil {
             try {
                 Configuration configuration = new Configuration().configure();
 
-                configuration.addAnnotatedClass(GraphEntity.class);
-                configuration.addAnnotatedClass(VertexEntity.class);
                 configuration.addAnnotatedClass(EdgeEntity.class);
 
                 System.out.println(configuration);

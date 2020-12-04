@@ -20,7 +20,7 @@ public final class DisplayService {
 
             builder
                     .append("id\t")
-                    .append("name\t");
+                    .append("name\n");
 
             for (GraphDTO graph : graphs) {
                 builder
